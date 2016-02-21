@@ -6,6 +6,7 @@ Select a speed difference you want to measure. After you have chosen the measure
 
 The measurement will automatically start and stop after you have reached the target speed.
 After the measurement, you can save your time and add a comment to it.
+[Link to Demo](https://speedmeter.meteor.com/)
 
 ##Contribution
 This is a beginner app, and so am I in the field of meteor and react. Feel free to comment on things to improve my code, but please be constructive!
