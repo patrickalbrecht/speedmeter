@@ -1,3 +1,7 @@
+/**
+ * Not used at the moment, but feature to come
+ */
+
 UserLogin = React.createClass({
     onSubmit(e) {
         e.preventDefault()

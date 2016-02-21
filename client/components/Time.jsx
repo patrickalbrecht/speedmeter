@@ -1,6 +1,7 @@
 // Time component - represents a single measurement
 Time = React.createClass({
     propTypes: {
+        // Time object is required
         time: React.PropTypes.object.isRequired
     },
 

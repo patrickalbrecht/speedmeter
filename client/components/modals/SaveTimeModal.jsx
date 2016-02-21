@@ -11,6 +11,7 @@ SaveTimeModal = React.createClass({
     },
 
     handleTimeCommentSubmit() {
+        // Call to server-side method to save the passed data into the db
         Meteor.call('addTime', this.props.measuredTime, this.props.measuredDifference, this.state.timeComment)
     },
 

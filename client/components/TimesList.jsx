@@ -1,6 +1,7 @@
 TimesList = React.createClass({
 
     mixins: [ReactMeteorData],
+    // Array with speed differences
     measurementTypes: [
         {value: '0-50'},
         {value: '0-100'},
@@ -17,7 +18,9 @@ TimesList = React.createClass({
 
     getMeteorData() {
         return {
+            // Get data from db
             times: MeasuredTimes.find({speedDifference: this.state.speedDifference}).fetch(),
+            // Users are able to login, but it is not used (yet)
             currentUser: Meteor.user()
         }
     },
@@ -26,10 +29,11 @@ TimesList = React.createClass({
 
         let rankingCounter = 0;
 
-        // Get tasks from this.data.tasks
+        // Get times from this.data.times
         return this.data.times.map((time) => {
             rankingCounter++
 
+            // Output entry in separate component
             return <Time
                 key={time._id}
                 ranking={rankingCounter}
@@ -41,12 +45,9 @@ TimesList = React.createClass({
 
     renderMeasurementTypes() {
 
+        // Render options from array
         return this.measurementTypes.map((type) => {
-            return <option
-                value={type.value}
-            >
-                {type.value} km/h
-            </option>
+            return <option value={type.value} >{type.value} km/h</option>
         })
     },
 
