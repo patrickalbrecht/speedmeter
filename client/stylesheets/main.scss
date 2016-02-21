@@ -1,0 +1,20 @@
+@import '{reywood:bootstrap3-sass}/bootstrap';
+
+.btn-responsive {
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+
+.col-spacing {
+  margin-bottom: 10px;
+}
+
+.jumbotron-finished {
+  background: green;
+  color: white;
+}
+
+.jumbotron-process {
+  background: red;
+  color: white;
+}
