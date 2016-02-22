@@ -12,7 +12,7 @@ After the measurement, you can save your time and add a comment to it.
 This is a beginner app, and so am I in the field of meteor and react. Feel free to comment on things to improve my code, but please be constructive!
 Pull requests are welcome.
 
-##Excalimer
+##Discalimer
 Please beware that the app is currently still in development.
 At this time you are able to push all kinds of times to the database, because there is no validation included yet.
 Please also note, that depending on the gps accuracy, the measured times can vary and not represent the actual time needed.
