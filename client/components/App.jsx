@@ -1,7 +1,5 @@
 App = React.createClass({
 
-    // TimerMixin for setInterval()
-    mixins: [TimerMixin],
     lastMeasurement: 0,
     measuredTime: 0,
 
@@ -91,7 +89,7 @@ App = React.createClass({
 
     startTimer() {
         // Update the time every 10ms
-        this.timer = TimerMixin.setInterval(() => {this.executeTimer()}, 10)
+        this.timer = Meteor.setInterval(() => {this.executeTimer()}, 10)
     },
 
     executeTimer() {
@@ -101,7 +99,7 @@ App = React.createClass({
 
     stopTimer() {
         // Stop the timer - setInterval()
-        clearInterval(this.timer)
+        Meteor.clearInterval(this.timer)
     },
 
     handleMeasurement(speed) {
