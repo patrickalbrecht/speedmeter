@@ -19,7 +19,7 @@ TimesList = React.createClass({
     getMeteorData() {
         return {
             // Get data from db
-            times: MeasuredTimes.find({speedDifference: this.state.speedDifference}).fetch(),
+            times: MeasuredTimes.find({speedDifference: this.state.speedDifference}, {sort: {measuredTime: 1}}).fetch(),
             // Users are able to login, but it is not used (yet)
             currentUser: Meteor.user()
         }
